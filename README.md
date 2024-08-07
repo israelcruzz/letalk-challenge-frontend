@@ -13,6 +13,10 @@ Foi feito o deploy do frontend utilizando a Vercel. Link Abaixo:
 
 2 horas as funcionalidades básicas, 3 horas as features.
 
+## Aviso sobre a API
+
+A API deste projeto foi implantada utilizando o serviço Render. Devido às políticas de inatividade do Render, a API pode ficar inativa após um período sem requisições. Quando isso ocorre, pode levar de 1 a 2 minutos para que a API seja reativada após a primeira requisição. Portanto, se você encontrar um atraso na resposta inicial, por favor, aguarde enquanto a API é reativada.
+
 ## Sumário
 - [Introdução](#introdução)
 - [Recursos](#recursos)
