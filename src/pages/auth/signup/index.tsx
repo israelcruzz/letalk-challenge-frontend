@@ -176,7 +176,7 @@ export default function SignUp() {
             </div>
             <div className="text-sm">
               <Link
-                to="/login"
+                to="/"
                 className="font-medium text-primary hover:text-primary/80"
               >
                 Já possui uma conta?
