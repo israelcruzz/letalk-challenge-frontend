@@ -39,7 +39,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { z } from "zod";
 import dayjs from "dayjs";
-import { useAuth } from "@/hooks/useAuth";
 
 export const CreateLoan = () => {
   const navigate = useNavigate();
@@ -54,7 +53,7 @@ export const CreateLoan = () => {
 
   type CreateLoanFormSchema = z.infer<typeof createLoanSchema>;
 
-  const { register, handleSubmit, reset, setValue } =
+  const { register, handleSubmit, setValue } =
     useForm<CreateLoanFormSchema>();
 
   const [selectedUF, setSelectedUF] = useState<string>("");
@@ -85,8 +84,8 @@ export const CreateLoan = () => {
       }
 
       const dataSimulate: CreateSimulate = {
-        monthlyPayment: parseFloat(data.monthlyPayment),
-        totalDebt: parseFloat(data.totalDebt),
+        monthlyPayment: parseFloat(data.monthlyPayment.toString()),
+        totalDebt: parseFloat(data.totalDebt.toString()),
         uf: data.uf,
       };
 
@@ -99,7 +98,6 @@ export const CreateLoan = () => {
 
       setLoading(false);
 
-      reset();
       setViewSimulate(true);
     } catch (error) {
       console.log(error);
