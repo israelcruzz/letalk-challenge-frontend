@@ -5,7 +5,9 @@ export const ThemeButton = () => {
   const [theme, setTheme] = useState("light");
 
   const changeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const currentTheme = theme  === "light" ? "dark" : "light"
+    setTheme(currentTheme);
+    localStorage.setItem("@theme", theme);
   };
 
   useEffect(() => {
@@ -13,12 +15,22 @@ export const ThemeButton = () => {
     if (htmlElement) {
       htmlElement.classList.remove("light", "dark");
 
+      const themeNow = localStorage.getItem("@theme");
+
+      if (themeNow) {
+        htmlElement.classList.add(themeNow);
+        return;
+      }
+
       htmlElement.classList.add(theme);
     }
   }, [theme]);
 
   return (
-    <div className="flex justify-center items-center cursor-pointer h-12 w-12" onClick={changeTheme}>
+    <div
+      className="flex justify-center items-center cursor-pointer h-12 w-12"
+      onClick={changeTheme}
+    >
       {theme === "light" ? <Sun size={24} /> : <SunMoon size={24} />}
     </div>
   );
