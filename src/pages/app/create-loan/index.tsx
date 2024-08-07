@@ -225,7 +225,7 @@ export const CreateLoan = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <section className="grid grid-cols-3 gap-y-8">
+              <section className="grid grid-cols-2 md:grid-cols-3 gap-y-8">
                 <div>
                   <h3 className="font-semibold text-black/60">
                     VALOR REQUERIDO:

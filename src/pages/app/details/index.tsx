@@ -144,7 +144,7 @@ export const Details = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">
+                  <div className="text-base md:text-2xl font-bold">
                     {formatterPrice(details.requiredValue)}
                   </div>
                 </CardContent>
@@ -158,7 +158,7 @@ export const Details = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">
+                  <div className="text-base md:text-2xl font-bold">
                     {formatterPrice(details.totalPay)}
                   </div>
                 </CardContent>
@@ -181,19 +181,19 @@ export const Details = () => {
                 <Table className="mt-12">
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="text-base font-bold text-black">
+                      <TableHead className="text-sm md:text-base font-bold dark:text-white text-black">
                         SALDO DEVEDOR
                       </TableHead>
-                      <TableHead className="text-base font-bold text-black">
+                      <TableHead className="text-sm md:text-base font-bold dark:text-white text-black">
                         JUROS
                       </TableHead>
-                      <TableHead className="text-base font-bold text-black">
+                      <TableHead className="text-sm md:text-base font-bold dark:text-white text-black">
                         SALDO DEVEDOR AJUSTADO
                       </TableHead>
-                      <TableHead className="text-base font-bold text-black">
+                      <TableHead className="text-sm md:text-base font-bold dark:text-white text-black">
                         VALOR DA PARCELA
                       </TableHead>
-                      <TableHead className="text-base font-bold text-black">
+                      <TableHead className="text-sm md:text-base font-bold dark:text-white text-black">
                         VENCIMENTO
                       </TableHead>
                     </TableRow>
