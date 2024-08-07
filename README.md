@@ -16,7 +16,7 @@ Foi feito o deploy do frontend utilizando a Vercel. Link Abaixo:
 ## Sumário
 - [Introdução](#introdução)
 - [Recursos](#recursos)
-- [Telhas](#telhas)
+- [Telas](#telas)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
@@ -34,7 +34,7 @@ A aplicação de Simulação de Empréstimos da Letalk foi projetada para ajudar
 - **Notificação de Sucesso**: Exibir uma mensagem de sucesso após a conclusão da solicitação de empréstimo.
 - **Download dos Detalhes da Simulação**: Opção para baixar os detalhes da simulação em formato Excel.
 
-## Telhas
+## Telas
 ### Login
 Os usuários podem fazer login para acessar os recursos de simulação de empréstimos.
 ![Tela de Login](https://github.com/israelcruzz/letalk-challenge-frontend/blob/main/public/thumbs/login.png?raw=true)
