@@ -29,6 +29,7 @@ export default function Login() {
     try {
       if (data.password.length < 8) {
         toast.error("A senha tem que ter mais de 8 caracteres");
+        setLoading(false);
         return;
       }
 
