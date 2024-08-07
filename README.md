@@ -72,7 +72,8 @@ Uma mensagem de sucesso é exibida após a conclusão bem-sucedida da solicitaç
 
 ### Vídeo de Demonstração
 Aqui está um vídeo demonstrando o funcionamento da aplicação:
-![Vídeo de Demonstração](https://drive.google.com/file/d/1mXbSeQxdlDiN4umB9YNrbryfvCtait96/view?usp=sharing)
+![Vídeo de Demonstração]
+<a href="https://drive.google.com/file/d/1mXbSeQxdlDiN4umB9YNrbryfvCtait96/view?usp=sharing">Assistir</a>
 
 ## Instalação
 Para rodar a aplicação localmente, siga estes passos:
